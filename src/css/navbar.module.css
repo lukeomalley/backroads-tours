@@ -76,6 +76,6 @@
   }
   .nav-social-links a:hover {
     color: var(--mainBlack);
-    transform: translateY(-5px);
+    transform: translateY(-2px);
   }
 }
