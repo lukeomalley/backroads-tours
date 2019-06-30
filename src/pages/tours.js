@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import Layout from '../components/Layout';
 
 export default class Tours extends Component {
   render() {
     return (
-      <div>
+      <Layout>
         <p>Tours Page</p>
-      </div>
+      </Layout>
     );
   }
 }
