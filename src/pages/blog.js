@@ -1,10 +1,12 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-export default function Blog() {
+const Blog = ({ data }) => {
   return (
     <Layout>
       <p>Blog Page</p>
     </Layout>
   );
-}
+};
+
+export default Blog;
