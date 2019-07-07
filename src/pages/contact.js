@@ -9,7 +9,7 @@ export default ({ data }) => {
     <Layout>
       <StyledHero
         img={data.contactBcg.childImageSharp.fluid}
-        backgroundPosition="50% 40%"
+        backgroundposition="50% 40%"
       ></StyledHero>
       <Contact />
     </Layout>

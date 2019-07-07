@@ -14,7 +14,7 @@ export default ({ data }) => (
     <StyledHero
       img={data.defaultBcg.childImageSharp.fluid}
       home="true"
-      backgroundPosition="50% 0%"
+      backgroundposition="50% 0%"
     >
       <Banner
         title="continue exploring"

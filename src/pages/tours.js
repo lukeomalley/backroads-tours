@@ -3,15 +3,17 @@ import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
 
 import StyledHero from '../components/StyledHero';
+import Tours from '../components/Tours/Tours';
 
-export default class Tours extends Component {
+export default class tours extends Component {
   render() {
     return (
       <Layout>
         <StyledHero
           img={this.props.data.defaultBcg.childImageSharp.fluid}
-          backgroundPosition="50% 72%"
+          backgroundposition="50% 72%"
         ></StyledHero>
+        <Tours />
       </Layout>
     );
   }
