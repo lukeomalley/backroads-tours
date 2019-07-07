@@ -24,7 +24,7 @@ const Template = ({ data }) => {
 
   return (
     <Layout>
-      <StyledHero img={mainImage.fluid} />
+      <StyledHero img={mainImage.fluid} backgroundposition="50% 40%" />
       <section className={styles.template}>
         <div className={styles.center}>
           <div className={styles.images}>
@@ -85,7 +85,7 @@ export const query = graphql`
       }
       images {
         fluid {
-          ...GatsbyContentfulFluid
+          ...GatsbyContentfulFluid_withWebp_noBase64
         }
       }
     }
