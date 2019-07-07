@@ -15,7 +15,9 @@ const Tour = ({ tour }) => {
           className={styles.img}
           alt="single tour"
         ></Image>
-        <AniLink fade to={`/tours/${slug}`} className={styles.link} />
+        <AniLink fade to={`/tours/${slug}`} className={styles.link}>
+          details
+        </AniLink>
       </div>
       <div className={styles.footer}>
         <h3>{name}</h3>
