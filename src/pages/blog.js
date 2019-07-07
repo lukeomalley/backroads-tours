@@ -8,7 +8,7 @@ export default ({ data }) => (
   <Layout>
     <StyledHero
       img={data.defaultBcg.childImageSharp.fluid}
-      backgroundposition="50% 60%"
+      backgroundposition="50% 58%"
     />
   </Layout>
 );
