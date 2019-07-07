@@ -21,7 +21,7 @@ export const query = graphql`
     defaultBcg: file(relativePath: { eq: "mountains.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

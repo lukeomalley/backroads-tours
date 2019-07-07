@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
@@ -19,9 +19,9 @@ export default ({ data }) => (
         title="continue exploring"
         info="Chillwave normcore hot chicken activated charcoal stumptown meditation lyft. Chartreuse normcore church-key art party hell of. Cliche pop-up brunch wayfarers leggings umami master cleanse pork belly lomo XOXO gentrify food truck narwhal snackwave mumblecore."
       >
-        <Link to="/tours" className="btn-white">
+        <AniLink fade to="/tours" className="btn-white">
           explore tours
-        </Link>
+        </AniLink>
       </Banner>
     </StyledHero>
     <About />
@@ -34,7 +34,7 @@ export const query = graphql`
     defaultBcg: file(relativePath: { eq: "mountains3.jpg" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 4160) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
