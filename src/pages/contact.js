@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import Contact from '../components/Contact/Contact';
 import StyledHero from '../components/StyledHero';
 
 export default ({ data }) => {
@@ -9,6 +10,7 @@ export default ({ data }) => {
         img={data.contactBcg.childImageSharp.fluid}
         backgroundPosition="50% 40%"
       ></StyledHero>
+      <Contact />
     </Layout>
   );
 };
