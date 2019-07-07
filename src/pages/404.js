@@ -9,7 +9,7 @@ export default function error() {
     <Layout>
       <header className={styles.error}>
         <Banner title="oops it's a dead end">
-          <AniLink fade to="/" className="btn-white">
+          <AniLink fade to="/" className="btn-white" duration={0.5}>
             back to homepage
           </AniLink>
         </Banner>

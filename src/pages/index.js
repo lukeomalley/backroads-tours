@@ -20,7 +20,7 @@ export default ({ data }) => (
         title="continue exploring"
         info="Chillwave normcore hot chicken activated charcoal stumptown meditation lyft. Chartreuse normcore church-key art party hell of. Cliche pop-up brunch wayfarers leggings umami master cleanse pork belly lomo XOXO gentrify food truck narwhal snackwave mumblecore."
       >
-        <AniLink fade to="/tours" className="btn-white">
+        <AniLink fade to="/tours" className="btn-white" duration={0.5}>
           explore tours
         </AniLink>
       </Banner>

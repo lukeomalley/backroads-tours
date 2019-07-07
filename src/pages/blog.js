@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import StyledHero from '../components/StyledHero';
+import BlogList from '../components/Blog/BlogList';
 
 export default ({ data }) => (
   <Layout>
@@ -10,6 +11,7 @@ export default ({ data }) => (
       img={data.defaultBcg.childImageSharp.fluid}
       backgroundposition="50% 58%"
     />
+    <BlogList />
   </Layout>
 );
 

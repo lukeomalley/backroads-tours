@@ -10,7 +10,7 @@ export default function Footer() {
       <div className={styles.links}>
         {links.map((item, index) => {
           return (
-            <AniLink fade key={index} to={item.path}>
+            <AniLink fade key={index} to={item.path} duration={0.5}>
               {item.text}
             </AniLink>
           );

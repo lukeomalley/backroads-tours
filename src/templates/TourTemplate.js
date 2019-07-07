@@ -59,7 +59,7 @@ const Template = ({ data }) => {
               return <Day key={index} day={item.day} info={item.info} />;
             })}
           </div>
-          <AniLink fade to="/tours" className="btn-primary">
+          <AniLink fade to="/tours" className="btn-primary" duration={0.5}>
             back to tours
           </AniLink>
         </div>

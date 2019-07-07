@@ -18,7 +18,7 @@ export default function Nav() {
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <AniLink to="/">
+          <AniLink to="/" duration={0.5}>
             <img src={logo} alt="Backroads Logo" />
           </AniLink>
           <button type="button" className={styles.logoBtn} onClick={toggleNav}>
@@ -35,7 +35,7 @@ export default function Nav() {
           {links.map((item, index) => {
             return (
               <li key={index}>
-                <AniLink fade to={item.path}>
+                <AniLink fade to={item.path} duration={0.5}>
                   {item.text}
                 </AniLink>
               </li>

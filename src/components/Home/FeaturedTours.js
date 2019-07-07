@@ -40,7 +40,7 @@ const FeaturedTours = () => {
         })}
       </div>
 
-      <AniLink fade to="/tours" className="btn-primary">
+      <AniLink fade to="/tours" className="btn-primary" duration={0.5}>
         all tours
       </AniLink>
     </section>
