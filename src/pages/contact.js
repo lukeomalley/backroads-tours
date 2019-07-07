@@ -8,3 +8,15 @@ export default function Contact() {
     </Layout>
   );
 }
+
+export const query = graphql`
+  query {
+    mountains2: file(relativePath: { eq: "mountain2.jpg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`;

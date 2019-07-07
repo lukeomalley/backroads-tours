@@ -10,7 +10,11 @@ import Services from '../components/Home/Services';
 
 export default ({ data }) => (
   <Layout>
-    <StyledHero img={data.defaultBcg.childImageSharp.fluid} home="true">
+    <StyledHero
+      img={data.defaultBcg.childImageSharp.fluid}
+      home="true"
+      backgroundPosition="50% 0%"
+    >
       <Banner
         title="continue exploring"
         info="Chillwave normcore hot chicken activated charcoal stumptown meditation lyft. Chartreuse normcore church-key art party hell of. Cliche pop-up brunch wayfarers leggings umami master cleanse pork belly lomo XOXO gentrify food truck narwhal snackwave mumblecore."
@@ -29,7 +33,7 @@ export const query = graphql`
   query {
     defaultBcg: file(relativePath: { eq: "mountains3.jpg" }) {
       childImageSharp {
-        fluid(quality: 90, maxWidth: 4160) {
+        fluid(quality: 100, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
