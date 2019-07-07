@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
-import SimpleHero from '../components/SimpleHero';
+import StyledHero from '../components/StyledHero';
 import Banner from '../components/Banner';
 import About from '../components/Home/About';
 import Services from '../components/Home/Services';
 
-export default () => (
+export default ({ data }) => (
   <Layout>
-    <SimpleHero>
+    <StyledHero img={data.defaultBcg.childImageSharp.fluid} home="true">
       <Banner
         title="continue exploring"
         info="Chillwave normcore hot chicken activated charcoal stumptown meditation lyft. Chartreuse normcore church-key art party hell of. Cliche pop-up brunch wayfarers leggings umami master cleanse pork belly lomo XOXO gentrify food truck narwhal snackwave mumblecore."
@@ -18,8 +19,20 @@ export default () => (
           explore tours
         </Link>
       </Banner>
-    </SimpleHero>
+    </StyledHero>
     <About />
     <Services />
   </Layout>
 );
+
+export const query = graphql`
+  query {
+    defaultBcg: file(relativePath: { eq: "mountains3.jpg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`;
